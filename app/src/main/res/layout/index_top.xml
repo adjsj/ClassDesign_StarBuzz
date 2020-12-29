@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+    <!--广告轮播-->
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pagers">
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <!--轮播指示器-->
+    <LinearLayout
+        android:id="@+id/pointers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="8dp"
+            android:src="@drawable/dot_selected"/>
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="8dp"
+            android:src="@drawable/dot_unselected"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="8dp"
+            android:src="@drawable/dot_unselected"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="8dp"
+            android:src="@drawable/dot_unselected"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+</FrameLayout>
